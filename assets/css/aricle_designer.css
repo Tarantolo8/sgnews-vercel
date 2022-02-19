@@ -109,13 +109,10 @@ div.startAni{
     z-index: 1;
 }
 
-div.startAni button.create, .rmstart div.back, .rmstart div.startAni button.finish{
+div.startAni button.create, .rmstart div.back, .rmstart div.startAni button.finish, .rmstart div.startAni iframe, .rmstart div.startAni h1{
     display: none;
 }
 
-.rmstart div.startAni h1{
-        display: none;
-}
 
 .rmstart div.startAni button.create{
     display: inline-block;
