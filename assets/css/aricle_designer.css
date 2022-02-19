@@ -117,3 +117,7 @@ div.startAni button.create, .rmstart div.back, .rmstart div.startAni button.fini
 .rmstart div.startAni button.create{
     display: inline-block;
 }
+
+label input{
+    display: none;
+}

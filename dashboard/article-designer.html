@@ -11,20 +11,13 @@
 <body>
 <div class="back"></div>
 <div class="startAni">
-  <iframe src="../assets/img/SG_News_logo_animated.svg" width="150px" height="150px" style="pointer-events: none; border: none;"></iframe>
   <h1>Article Designer</h1>
   <input type="text" placeholder="Titel des Artikels..." id="title">
   <button class="finish" onclick="closeStart()"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Accept</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M416 128L192 384l-96-96"/></svg></button>
   <button class="create" id="makeTxt" onclick="saveTxt()">Save as .HTML</button>
+  <button class="create" onclick="tinymce.activeEditor.execCommand('mcePrint');">Print</button>
 </div>
 <p><textarea id='input' placeholder="Artikel usw...">
-  <h1 style="text-align: center;"><span style="font-family: arial, helvetica, sans-serif;">SG-News - Lorem Ipsum</span></h1>
-  <div><span style="font-family: arial, helvetica, sans-serif;"><img style="border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" src="https://cdn.discordapp.com/attachments/780149866307387400/944311088223236196/mountains-1412683.png" width="600px" /></span></div>
-  <p style="text-align: justify; width: 600px;">&nbsp;</p>
-  <div style="text-align: center;">
-  <p style="width: 600px; text-align: justify;"><span style="font-family: arial, helvetica, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Leo vel fringilla est ullamcorper eget. Ornare suspendisse sed nisi lacus sed viverra. Vel eros donec ac odio. Cursus in hac habitasse platea dictumst quisque. Morbi tincidunt augue interdum velit euismod in pellentesque. Faucibus scelerisque eleifend donec pretium. Sed odio morbi quis commodo odio aenean sed. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor. <span style="color: #3598db;"><a style="color: #3598db;" href="https://example.com" target="_blank" rel="noopener"><span style="color: #095fef;"><span style="color: #095fef;">Arcu vitae</span></span></a></span> elementum curabitur vitae nunc. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Orci dapibus ultrices in iaculis. Ut aliquam purus sit amet luctus venenatis lectus. Sodales ut etiam sit amet nisl purus in mollis. Nulla pharetra diam sit amet nisl. Vitae suscipit tellus mauris a diam maecenas.</span></p>
-  <p style="width: 600px; text-align: justify;"><span style="font-family: arial, helvetica, sans-serif;">Bibendum at varius vel pharetra vel turpis nunc eget lorem. Purus viverra accumsan in nisl nisi scelerisque. Metus aliquam eleifend mi in nulla posuere. Risus at ultrices mi tempus. Mauris sit amet massa vitae. Viverra ipsum nunc aliquet bibendum enim. Blandit aliquam etiam erat velit scelerisque in dictum non. Diam vulputate ut pharetra sit amet aliquam id diam maecenas. Gravida quis blandit turpis cursus in. Nunc sed augue lacus viverra vitae congue eu consequat. Interdum posuere lorem ipsum dolor sit amet.</span></p>
-  </div>
 </textarea></p>
 
   </body>
