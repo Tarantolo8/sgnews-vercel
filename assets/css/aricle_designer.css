@@ -1,0 +1,122 @@
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    user-select: none;
+}
+
+.rmstart input{
+    height: 35px;
+    font-size: 14px;
+}
+
+input {
+    height: 60px;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #000;
+    display: inline-block;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 24px;
+}
+
+input:hover{
+    background-color: #f0f0f0;
+}
+
+input:focus{
+    background-color: #f0f0f0;
+    outline: #000 2px solid;
+}
+
+button {
+height: 35px;
+    background-color: #000;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 24px;
+    margin: 0;
+    padding: 4px 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+button:hover{
+    background-color: #444;
+}
+
+button:active{
+    background-color: #888;
+}
+
+div.back{
+    background-color: #ffffffec;
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+div.startAni button svg{
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+}
+
+div.startAni button.finish{
+    height: 60px;
+}
+
+div.startAni{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.rmstart div.startAni{
+    margin-top: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+div.startAni button.create, .rmstart div.back, .rmstart div.startAni button.finish{
+    display: none;
+}
+
+.rmstart div.startAni h1{
+        display: none;
+}
+
+.rmstart div.startAni button.create{
+    display: inline-block;
+}
