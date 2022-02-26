@@ -32,7 +32,7 @@ menubar: false,
 plugins: [
 'advlist autolink lists link image charmap print preview anchor imagetools template',
 'searchreplace visualblocks code codesample fullscreen pagebreak importcss noneditable',
-'insertdatetime media table paste code help wordcount pageembed tinymcespellchecker tinydrive'
+'insertdatetime media table paste code help wordcount pageembed tinymcespellchecker '  //tinydrive -> irgendwann mal
 ],
 codesample_languages: [
   {text: 'HTML/XML', value: 'markup'},
@@ -59,7 +59,7 @@ tinydrive_token_provider: 'URL_TO_YOUR_TOKEN_PROVIDER',
 templates: [
 {title: 'Website Artikel', description: 'Website Artikel', url: 'templates/web_article.html'},
 {title: 'Druckvorlage Artikel', description: 'Druckvorlage Artikel', url: 'templates/print_article.html'},
-]
+],
 });
 
 

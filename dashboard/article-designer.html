@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="../assets/css/aricle_designer.css">
   <script src="https://cdn.tiny.cloud/1/dk3fp7gtb9a1y1nnvp1vz4lmvnq7tf97oj9uk1v8xq9r19lw/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </head>
-<body>
+<body id="dark">
 <div class="back"></div>
-<div class="startAni">
-  <h1>Article Designer</h1>
-  <input type="text" placeholder="Titel des Artikels..." id="title">
-  <button class="finish" onclick="closeStart()"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Accept</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M416 128L192 384l-96-96"/></svg></button>
-  <button class="create" id="makeTxt" onclick="saveTxt()">Save as .HTML</button>
-  <button class="create" onclick="tinymce.activeEditor.execCommand('mcePrint');">Print</button>
+<div id="dark" class="startAni">
+  <h1 id="dark">Article Designer</h1>
+  <input id="dark" type="text" placeholder="Titel des Artikels..." id="title">
+  <button id="dark" class="finish" onclick="closeStart()"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Accept</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M416 128L192 384l-96-96"/></svg></button>
+  <button class="create" id="makeTxt dark" onclick="saveTxt()">Save as .HTML</button>
+  <button id="dark" class="create two" onclick="tinymce.activeEditor.execCommand('mcePrint');">Print</button>
 </div>
-<p><textarea id='input' placeholder="Artikel usw...">
+<p><textarea id='input dark' placeholder="Artikel usw...">
 </textarea></p>
 
   </body>
