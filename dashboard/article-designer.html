@@ -12,10 +12,14 @@
 <div class="back"></div>
 <div id="dark" class="startAni">
   <h1 id="dark">Article Designer</h1>
-  <input id="dark" type="text" placeholder="Titel des Artikels..." id="title">
+  <input type="text" placeholder="Titel des Artikels..." id="title">
   <button id="dark" class="finish" onclick="closeStart()"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Accept</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M416 128L192 384l-96-96"/></svg></button>
   <button class="create" id="makeTxt dark" onclick="saveTxt()">Save as .HTML</button>
   <button id="dark" class="create two" onclick="tinymce.activeEditor.execCommand('mcePrint');">Print</button>
+<!--
+  <a href="#dark" class="light" id="dark">Darkmode</a>
+  <a href="#" class="dark" id="dark">Lightmode</a>
+-->
 </div>
 <p><textarea id='input dark' placeholder="Artikel usw...">
 </textarea></p>

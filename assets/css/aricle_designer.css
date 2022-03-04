@@ -3,6 +3,22 @@ body{
     user-select: none;
 }
 
+a.light{
+    color: #000;
+}
+
+a.dark{
+    color: #fff;
+}
+
+a:hover{
+    opacity: .7;
+}
+
+a:active{
+    opacity: .5;
+}
+
 .rmstart input{
     height: 35px;
     font-size: 14px;
@@ -161,27 +177,15 @@ button:target{
     color: #000;
 }
 
-button:hover:target{
-    background-color: rgb(216, 216, 216);
-}
-
-button:active:target{
-    background-color: rgb(139, 139, 139);
-}
-
 button.two:target{
     background-color: rgb(0, 0, 0);
     color: #fff;
 }
 
-button.two:hover:target{
-    background-color: #1f1f1f;
-}
-
-button.two:active:target{
-    background-color: #494949;
-}
-
 div.back:target{
     background-color: #000000d3;
+}
+
+a:target{
+    color: #fff;
 }
