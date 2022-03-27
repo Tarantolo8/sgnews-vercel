@@ -3,12 +3,22 @@ body{
     user-select: none;
 }
 
-.rmstart input{
+::selection{
+    background-color: #000;
+    color: #fff;
+}
+
+.rmstart input, .rmstart select{
     height: 35px;
     font-size: 14px;
 }
 
-input{
+select{
+    cursor: pointer;
+    width: 210px;
+}
+
+input, select{
     height: 60px;
     background-color: #fff;
     background-image: none;
@@ -28,17 +38,27 @@ input{
     line-height: 24px;
 }
 
-input:hover{
+input:hover, select:hover{
     background-color: #f0f0f0;
 }
 
-input:focus{
+input:focus, select:focus{
     background-color: #f0f0f0;
     outline: #000 2px solid;
 }
 
+option{
+    background-color: #fff;
+    color: #000;
+}
+
+option:hover{
+    background-color: #000;
+    color: #fff;
+}
+
 button {
-height: 35px;
+    height: 35px;
     background-color: #000;
     background-image: none;
     background-position: 0 0;
@@ -85,6 +105,49 @@ button.two:active{
     background-color: #b8b8b8;
 }
 
+
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.upload-btn-wrapper:hover{
+    opacity: .7;
+}
+
+.upload-btn-wrapper:active{
+    opacity: .5;
+}
+  
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+
+
+div.addwebsite{
+    display: none;
+}
+
+div.addwebsite .place{
+    height: 30px;
+}
+
+button.close{
+    position: absolute;
+    right: 0;
+    z-index: 20;
+}
+
 div.back{
     background-color: #ffffffec;
     backdrop-filter: blur(10px);
@@ -95,6 +158,10 @@ div.back{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9;
+}
+
+div.startAni button.right{
+    float: right;
 }
 
 div.startAni button svg{
@@ -108,18 +175,31 @@ div.startAni button.finish{
     height: 60px;
 }
 
-div.startAni{
+div.startAni, div.window{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
+    vertical-align: middle;
 }
 
 .rmstart div.startAni{
     margin-top: 25px;
     position: relative;
     z-index: 1;
+}
+
+.rmstart div.startAni .upload-btn-wrapper button.btn{
+    display: inline-block;
+}
+
+div.startAni .upload-btn-wrapper button.btn{
+    display: none;
+}
+
+body.addRegister div.addwebsite, body.addRegister div.back{
+    display: block;
 }
 
 div.startAni button.create, .rmstart div.back, .rmstart div.startAni button.finish, .rmstart div.startAni iframe, .rmstart div.startAni h1{
@@ -133,6 +213,14 @@ div.startAni button.create, .rmstart div.back, .rmstart div.startAni button.fini
 
 label input{
     display: none;
+}
+
+div.window{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 90vh;
+    max-width: 90vw;
+    padding: 10px;
 }
 
 

@@ -12,14 +12,48 @@
 <div class="back"></div>
 <div id="dark" class="startAni">
   <h1 id="dark">Article Designer</h1>
-  <input id="dark" type="text" placeholder="Titel des Artikels..." id="title">
+  <input type="text" placeholder="Titel des Artikels..." id="title" onchange="document.getElementById('tittlleee').value = document.getElementById('title').value; ChangeURL()">
   <button id="dark" class="finish" onclick="closeStart()"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Accept</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M416 128L192 384l-96-96"/></svg></button>
-  <button class="create" id="makeTxt dark" onclick="saveTxt()">Save as .HTML</button>
   <button id="dark" class="create two" onclick="tinymce.activeEditor.execCommand('mcePrint');">Print</button>
-</div>
-<p><textarea id='input dark' placeholder="Artikel usw...">
-</textarea></p>
+  <button class="create" id="makeTxt dark" onclick="saveTxt()">Save as .HTML</button>
+  <div class="upload-btn-wrapper">
+    <button id="dark" class="finish" onclick="closeStart()"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Cloud Upload</title><path d="M320 367.79h76c55 0 100-29.21 100-83.6s-53-81.47-96-83.6c-8.89-85.06-71-136.8-144-136.8-69 0-113.44 45.79-128 91.2-60 5.7-112 43.88-112 106.4s54 106.4 120 106.4h56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 255.79l-64-64-64 64M256 448.21V207.79"/></svg></button>
+    <button class="btn">Import from .HTML</button>
+    <input type="file" name="inputFile" id="inputFile">
+  </div>
+  <!--<button id="dark" class="create two right" onclick="openRegister()">Register Article</button>
 
+  <a href="#dark" class="light" id="dark">Darkmode</a>
+  <a href="#" class="dark" id="dark">Lightmode</a>
+-->
+</div>
+<p><textarea id='editor' placeholder="Artikel usw..." onkeyup=""></textarea></p>
+<div class="window addwebsite">
+  <button id="dark" class="close" onclick="openRegister()">X</button>
+  <div class="place"></div>
+  <h2>Register Article</h2>
+  <h3>Password</h3>
+  <p><input type="password" id="titthsdfgskjfgs" name="passwd" required placeholder="Password"></p>
+  <form action="https://formspree.io/f/xqknlrbr" method="POST" id="submitarticles">
+    <h3>Titel des Artikels</h3>
+    <input type="text" name="titleee" onkeyup="document.getElementById('title').value = document.getElementById('tittlleee').value; ChangeURL()" onchange="document.getElementById('title').value = document.getElementById('tittlleee').value; ChangeURL()" id="tittlleee" required placeholder="Titel des Artikels...">
+    <p><input type="url" name="url" id="FormURL" required placeholder="URL des Artikels..." disabled></p>
+    <h3>Kategorie das Artikels</h3>
+    <p>
+      <select name="category-normal" placeholder="Kategorie des Artikels..." required>
+      <option value="empty" disabled selected>select Category</option>
+      <option value="other">Other</option>
+      <option value="sg-detmold">Stadgymnasium Detmold</option>
+      <option value="andereschule">andere Schule</option>
+      <option value="detmold">Detmold</option>
+      <option value="kultur">Kultur</option>
+      <option value="music">Musik</option>
+    </select>
+    <p><input id="tfoot" type="text" name="category" placeholder="andere Kategorie..."></p>
+  </p>
+</form>
+<button onclick="submitArticle()">Submit</button>
+</div>
   </body>
   <script src="../assets/js/jquerymin-3.6.0.js"></script>
   <script src="../assets/js/article_designer.js"></script>
